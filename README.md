@@ -15,7 +15,7 @@
 
 **HEROKU APP**
 
-Cards for Humanity - [https://cardsforhumanityapp.herokuapp.com//](https://cardsforhumanityapp.herokuapp.com/)
+Cards for Humanity - [https://cardsforhumanityapp.herokuapp.com/](https://cardsforhumanityapp.herokuapp.com/)
 
 
 

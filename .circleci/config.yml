@@ -22,20 +22,22 @@ jobs: # a collection of steps
       - run: # run tests
           name: test
           command: npm test
-      - run: npm install mocha-junit-reporter # just for CircleCI
-       # Run mocha
-      - run:
-          name: npm test
-          command: ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive --timeout=10000 --exit --reporter mocha-junit-reporter --reporter-options mochaFile=reports/mocha/test-results.xml
-          when: always
+      - run: # run coverage report
+          #name: code-coverage
+         #command: './node_modules/.bin/nyc report --reporter=text-lcov'
+      - store_artifacts: # special step to save test results as as artifact
+          path: test-results.xml
+          prefix: tests
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
+      - store_test_results: # special step to upload test results for display in Test Summary
+          path: test-results.xml
+      # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
+deployment:
+  production: # just a label; label names are completely up to you
+    branch: master
+    heroku:
+      appname: cardsforhumanityapp
+  
 
-
-     - run:
-        name: code-coverage
-         command: |
-                    mkdir coverage
-                    # nyc report requires that nyc has already been run,
-                    # which creates the .nyc_output folder containing necessary data
-                    ./node_modules/.bin/nyc report --reporter=text-lcov > coverage/lcov.info
-                    ./cc-test-reporter after-build -t lcov
-         when: always

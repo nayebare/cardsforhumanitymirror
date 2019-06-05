@@ -1,6 +1,6 @@
 {
     "app": {
-        "name": "Cards for Humanity - Development"
+        "name": "Cards for Humanity - dev-local"
     },
     "facebook": {
         "clientID": "APP_ID",
@@ -8,8 +8,8 @@
         "callbackURL": "http://cardsforhumanity.com:3000/auth/facebook/callback"
     },
     "twitter": {
-        "clientID": "CONSUMER_KEY",
-        "clientSecret": "CONSUMER_SECRET",
+        "clientID": "ZwvxmHobcB9vsYb3ZsUpSuAUK",
+        "clientSecret": "hTGxaAjfJPS8807wgV75W7f2cJDtz7OJFOriD8l3e7j9RagLtp",
         "callbackURL": "http://cardsforhumanity.com:3000/auth/twitter/callback"
     },
     "github": {

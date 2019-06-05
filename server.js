@@ -1,4 +1,8 @@
-//support loading of env variables from .env files
+
+/**
+ * function load supports loading of env variables from .env files
+ */
+
 require('dotenv-extended').load();
 
 /**
@@ -22,7 +26,11 @@ var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development',
     auth = require('./config/middlewares/authorization'),
     mongoose = require('mongoose');
 
-//Bootstrap db connection
+/**
+ * @param {string} database configuration string
+ * @returns configuration mongodb url
+ */
+
 var db = mongoose.connect(config.db);
 
 //Bootstrap models

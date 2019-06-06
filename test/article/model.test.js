@@ -1,6 +1,14 @@
+/*
+module.exports = {
+    setupTestFrameworkScriptFile: './jest.setup.js'
+  }
+  
+  // jest.setup.js
+  jest.setTimeout(30000)
+  
 /**
  * Module dependencies.
- */
+ 
 var should = require('should'),
     app = require('../../server'),
     mongoose = require('mongoose'),
@@ -14,7 +22,8 @@ var article;
 //The tests
 describe('<Unit Test>', function() {
     describe('Model Article:', function() {
-        beforeEach(function(done) {
+        beforeEach(  function(done) {
+         
             user = new User({
                 name: 'Full name',
                 email: 'test@test.com',
@@ -56,3 +65,5 @@ describe('<Unit Test>', function() {
         });
     });
 });
+
+*/

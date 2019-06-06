@@ -14,9 +14,8 @@
   },
   "scripts": {
     "start": "node node_modules/grunt-cli/bin/grunt",
-    "test": "jest", 
-    "test:watch": "jest --watch",   
-    "test:coverage": "jest --coverage --colors", 
+    "test": "jest",
+    "test:coverage": "jest --coverage --colors",
     "postinstall": "node node_modules/grunt-cli/bin/grunt install"
   },
   "dependencies": {
@@ -34,6 +33,7 @@
     "grunt-bower-task": "~0.4.0",
     "grunt-cli": "~0.1.9",
     "jade": "~0.35.0",
+    "jquery": "^3.4.1",
     "mean-logger": "~0.0.1",
     "mongoose": "~3.6.20",
     "passport": "~0.1.17",

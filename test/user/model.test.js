@@ -1,6 +1,7 @@
-/**
+
+/*
  * Module dependencies.
- */
+ 
 var should = require('should'),
     app = require('../../server'),
     mongoose = require('mongoose'),
@@ -18,8 +19,8 @@ try {
 function getRandomString(length){
     if(crypto) {
         return crypto.randomBytes(Math.ceil(length / 2))
-            .toString('hex') /** convert to hexadecimal format */
-            .slice(0, length);   /** return required number of characters */
+            .toString('hex') /** convert to hexadecimal format *
+            .slice(0, length);   /** return required number of characters 
     }
     else {
         return Date.now.toString();
@@ -92,3 +93,5 @@ describe('<Unit Test>', function() {
         });
     });
 });
+
+*/

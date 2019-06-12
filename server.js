@@ -52,18 +52,30 @@ walk(models_path);
 
 //bootstrap passport config
 require('./config/passport')(passport);
-
+const bodyParser = require('body-parser');
 var app = express();
+var path = require('path');
+
+/**
+ * Defining the static files
+ */
 
 app.use(function(req, res, next){
     next();
 });
 
+//Middleware for bodyparsing using both json and urlencoding
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+
+//app.use(express.static(path.join(__dirname, '/public/views/')));
 //express settings
 require('./config/express')(app, passport, mongoose);
 
 //Bootstrap routes
 require('./config/routes')(app, passport, auth);
+
+
 
 //Start the app by listening on <port>
 var port = config.port;
@@ -72,6 +84,7 @@ var ioObj = io.listen(server, { log: false });
 //game logic handled here
 require('./config/socket/socket')(ioObj);
 console.log('Express app started on port ' + port);
+
 
 //Initializing logger
 logger.init(app, passport, mongoose);

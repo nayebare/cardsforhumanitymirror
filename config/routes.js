@@ -91,10 +91,5 @@ module.exports = function(app, passport, auth) {
     var index = require('../app/controllers/index');
     app.get('/play', index.play);
     app.get('/', index.render);
-     //public pages
-     app.get('/about-us');
-     app.get('/charity');
-     app.get('/how-to-play');
-     app.get('/signout');
 
 };

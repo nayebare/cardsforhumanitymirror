@@ -43,7 +43,7 @@ jobs:
       - run: jest --collectCoverage=true
 
       #deployment
-      - deployment:
+        deployment:
             production: 
                 branch: master
                 heroku: cardsforhumanityapp

@@ -4,6 +4,7 @@ const User = mongoose.model("User");
 const Article = mongoose.model("Article");
 const should = require('should');
 
+
 var user;
 
 describe("Method Save", function() {
@@ -24,14 +25,28 @@ describe("Method Save", function() {
         }).save();
       });
 
-      /*
-      it('should be able to show an error when try to save without title', async(err) => {
+      
+      it('should be able to show an error when trying to save without an article title', async(done) => {
         await new Article({
             title: '', 
             content: 'Article Content',
-        }).save();
-        should.exist(err);
+        }).save(function(err) {
+          should.exist(err)
+          done();
+      });
     });
-    */
+
+
+    it('should be able to show an error when try to save with email not properly formed', async(done) => { 
+      await new User({
+        name: "Full name",
+        email: "test-test.com",
+        password: "password",
+        username: "tehdydkd"
+      }).save(function(err){
+        should.exist(err);
+        done();
+      })
+  });
   });
 });

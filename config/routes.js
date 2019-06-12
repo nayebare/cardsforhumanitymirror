@@ -7,6 +7,8 @@ module.exports = function(app, passport, auth) {
     app.get('/signup', users.signup);
     app.get('/chooseavatars', users.checkAvatar);
     app.get('/signout', users.signout);
+    
+   
 
     //Setting up the users api
     app.post('/users', users.create);

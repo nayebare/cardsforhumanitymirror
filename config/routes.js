@@ -97,4 +97,8 @@ module.exports = function(app, passport, auth) {
      app.get('/how-to-play');
      app.get('/signout');
 
+     app.get('/charity', function(req,res) {
+        res.sendfile(__dirname + '/public/views/index.html')
+     })
+
 };

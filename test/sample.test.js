@@ -9,20 +9,22 @@ var user;
 
 describe("Method Save", function() {
   describe("Model User:", function() {
-    it("should be able to save a user without problems", async () => {
+    it("should be able to save a user without problems", async (done) => {
       await new User({
         name: "Full name",
         email: "test@test.com",
         password: "password",
         username: "tehdydkd"
       }).save();
+      done();
     });
 
-    it("should be able to save an article without problems", async () => {
+    it("should be able to save an article without problems", async (done) => {
         await new Article({
             title: 'Article Title',
             content: 'Article Content',
         }).save();
+        done();
       });
 
       

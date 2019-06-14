@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1560537447471" clover="3.2.0">
-  <project timestamp="1560537447471" name="All files">
-    <metrics statements="188" coveredstatements="92" conditionals="90" coveredconditionals="10" methods="51" coveredmethods="11" elements="329" coveredelements="113" complexity="0" loc="188" ncloc="188" packages="2" files="9" classes="9"/>
+<coverage generated="1560537897395" clover="3.2.0">
+  <project timestamp="1560537897395" name="All files">
+    <metrics statements="188" coveredstatements="78" conditionals="90" coveredconditionals="1" methods="51" coveredmethods="3" elements="329" coveredelements="82" complexity="0" loc="188" ncloc="188" packages="2" files="9" classes="9"/>
     <package name="controllers">
       <metrics statements="129" coveredstatements="40" conditionals="68" coveredconditionals="0" methods="37" coveredmethods="1"/>
       <file name="answers.js" path="C:\Users\mnayebare\Desktop\Andela-slf\docs\cardsforhumanity\app\controllers\answers.js">
@@ -150,7 +150,7 @@
       </file>
     </package>
     <package name="models">
-      <metrics statements="59" coveredstatements="52" conditionals="22" coveredconditionals="10" methods="14" coveredmethods="10"/>
+      <metrics statements="59" coveredstatements="38" conditionals="22" coveredconditionals="1" methods="14" coveredmethods="2"/>
       <file name="answer.js" path="C:\Users\mnayebare\Desktop\Andela-slf\docs\cardsforhumanity\app\models\answer.js">
         <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="4" count="1" type="stmt"/>
@@ -182,7 +182,7 @@
         <line num="45" count="1" type="stmt"/>
       </file>
       <file name="user.js" path="C:\Users\mnayebare\Desktop\Andela-slf\docs\cardsforhumanity\app\models\user.js">
-        <metrics statements="38" coveredstatements="34" conditionals="22" coveredconditionals="10" methods="11" coveredmethods="10"/>
+        <metrics statements="38" coveredstatements="20" conditionals="22" coveredconditionals="1" methods="11" coveredmethods="2"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
@@ -192,28 +192,28 @@
         <line num="33" count="1" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
         <line num="35" count="2" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
-        <line num="44" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="48" count="1" type="stmt"/>
-        <line num="50" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="51" count="2" type="stmt"/>
+        <line num="50" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="51" count="0" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
-        <line num="56" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="57" count="2" type="stmt"/>
+        <line num="56" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="57" count="0" type="stmt"/>
         <line num="60" count="1" type="stmt"/>
-        <line num="62" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="63" count="2" type="stmt"/>
+        <line num="62" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="63" count="0" type="stmt"/>
         <line num="66" count="1" type="stmt"/>
-        <line num="68" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="69" count="2" type="stmt"/>
+        <line num="68" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="69" count="0" type="stmt"/>
         <line num="73" count="1" type="stmt"/>
-        <line num="79" count="2" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
         <line num="86" count="1" type="stmt"/>
-        <line num="87" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="89" count="1" type="cond" truecount="2" falsecount="2"/>
+        <line num="87" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="89" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="90" count="0" type="stmt"/>
-        <line num="92" count="1" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
         <line num="98" count="1" type="stmt"/>
         <line num="107" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="108" count="0" type="stmt"/>

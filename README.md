@@ -10,7 +10,8 @@
 
 **CODE CLIMATE TEST COVERAGE**
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/e0775b899dddcf1bec95/test_coverage)](https://codeclimate.com/github/nayebare/cardsforhumanity/test_coverage)
+<a href="https://codeclimate.com/github/nayebare/cardsforhumanitymirror/test_coverage"><img src="https://api.codeclimate.com/v1/badges/e81b7ab90baeec774195/test_coverage" /></a>
+
 
 
 **HEROKU APP**
